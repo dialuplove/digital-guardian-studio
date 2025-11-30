@@ -20,7 +20,7 @@ export function HowIWorkSection() {
           <span className="section-label">Approach</span>
           <h2 className="section-title">How I Work</h2>
           <p className="section-description">
-            Custom work, shared privately.
+            Custom work. Privacy is paramount.
           </p>
         </div>
 

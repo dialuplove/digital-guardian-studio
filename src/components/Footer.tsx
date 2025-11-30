@@ -1,11 +1,11 @@
 export function Footer() {
   return (
-    <footer className="py-8 border-t border-border/50">
+    <footer className="py-10 border-t border-border">
       <div className="container-narrow">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
-          <div className="font-mono text-sm">
-            <span className="text-primary">&gt;</span> PrisonKite
+          <div className="text-sm font-medium text-foreground">
+            PrisonKite
           </div>
 
           {/* Copyright */}

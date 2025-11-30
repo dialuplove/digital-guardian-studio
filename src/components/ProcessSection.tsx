@@ -29,15 +29,15 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="section-padding bg-surface/50">
+    <section className="section-padding bg-muted/30">
       <div className="container-narrow">
         {/* Header */}
         <div className="max-w-2xl mb-16">
-          <span className="font-mono text-sm text-primary mb-4 block">Process</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          <span className="section-label">Process</span>
+          <h2 className="section-title">
             How we'll work together.
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="section-description">
             No endless meetings or mystery timelines. Just a clear path from idea to shipped product.
           </p>
         </div>
@@ -48,21 +48,21 @@ export function ProcessSection() {
             <div key={step.number} className="relative">
               {/* Connector line */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-8 left-full w-full h-px bg-border/50 -z-10" />
+                <div className="hidden lg:block absolute top-7 left-full w-full h-px bg-border -z-10" />
               )}
               
               {/* Step content */}
               <div className="group">
                 {/* Number & Icon */}
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-14 h-14 rounded-xl bg-card border border-border/50 flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                    <step.icon size={24} className="text-primary" />
+                  <div className="w-14 h-14 rounded-xl bg-card border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
+                    <step.icon size={22} className="text-primary" />
                   </div>
-                  <span className="font-mono text-3xl font-bold text-border/80">{step.number}</span>
+                  <span className="font-mono text-2xl font-medium text-border">{step.number}</span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold mb-2">{step.title}</h3>
+                <h3 className="text-lg font-semibold mb-2 text-foreground">{step.title}</h3>
 
                 {/* Description */}
                 <p className="text-sm text-muted-foreground leading-relaxed">

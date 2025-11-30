@@ -13,27 +13,27 @@ export function AboutSection() {
             </h2>
             
             <p className="text-muted-foreground leading-relaxed text-lg mb-10">
-              I'm Andrew, the person behind PrisonKite. I build websites, prototype hardware, and help people understand scams so they can protect themselves and the people they care about. I work directly with families, small teams, and indie makers who need someone technical, patient, and honest.
+              I build websites, prototype hardware, and teach scam defense. I work with families, small teams, and indie makers.
             </p>
             
-            <div className="space-y-5 mb-10">
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-3.5 h-3.5 text-primary" />
+            <div className="space-y-4 mb-10">
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-primary" />
                 </div>
-                <span className="text-foreground leading-relaxed">Technical enough to build real things.</span>
+                <span className="text-foreground">Technical. Builds real things.</span>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-3.5 h-3.5 text-primary" />
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-primary" />
                 </div>
-                <span className="text-foreground leading-relaxed">Clear enough to teach complex ideas without jargon.</span>
+                <span className="text-foreground">Clear. No jargon.</span>
               </div>
-              <div className="flex items-start gap-4">
-                <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <Check className="w-3.5 h-3.5 text-primary" />
+              <div className="flex items-center gap-3">
+                <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Check className="w-3 h-3 text-primary" />
                 </div>
-                <span className="text-foreground leading-relaxed">Calm enough to help people who feel overwhelmed.</span>
+                <span className="text-foreground">Calm. Patient with overwhelm.</span>
               </div>
             </div>
             
@@ -57,7 +57,7 @@ export function AboutSection() {
                 
                 <div className="pt-6 border-t border-border/50">
                   <p className="text-muted-foreground leading-relaxed">
-                    Building websites, hacking hardware, and helping people stay safe from scams since the dial-up days.
+                    Web, hardware, scam defense. Since dial-up.
                   </p>
                 </div>
               </div>

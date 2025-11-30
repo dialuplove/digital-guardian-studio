@@ -5,25 +5,25 @@ const steps = [
     icon: MessageSquare,
     number: "01",
     title: "Listen & Sketch",
-    description: "We talk about what you need. I ask questions, take notes, and start sketching ideas.",
+    description: "Questions, notes, early ideas.",
   },
   {
     icon: PenTool,
     number: "02",
     title: "Prototype & Iterate",
-    description: "Quick mockups and rough builds. We refine together until it feels right.",
+    description: "Quick builds, fast feedback.",
   },
   {
     icon: Wrench,
     number: "03",
     title: "Build & Test",
-    description: "Real code, real hardware, real results. Everything gets tested before it ships.",
+    description: "Real code, real tests.",
   },
   {
     icon: Rocket,
     number: "04",
     title: "Launch & Refine",
-    description: "Ship it, watch it work, make it better. I stick around to help things grow.",
+    description: "Ship, monitor, improve.",
   },
 ];
 
@@ -37,9 +37,6 @@ export function ProcessSection() {
           <h2 className="section-title">
             How we'll work together.
           </h2>
-          <p className="section-description">
-            No endless meetings or mystery timelines. Just a clear path from idea to shipped product.
-          </p>
         </div>
 
         {/* Steps */}

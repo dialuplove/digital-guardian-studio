@@ -29,7 +29,7 @@ export function ScamDefenseSection() {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-12 leading-relaxed">
-            Talks and training to help families, small businesses, and communities stay safe from scams, deepfakes, phishing, and digital manipulation.
+            Training for families, businesses, and communities.
           </p>
 
           {/* Threat indicators */}

@@ -32,10 +32,10 @@ export function ContactSection() {
           <div>
             <span className="section-label">Contact</span>
             <h2 className="section-title">
-              Got an idea or need help staying safe online?
+              Let's talk.
             </h2>
             <p className="section-description mb-12">
-              Whether you want to build something cool, upgrade your homelab, or book a scam-defense talk—let's chat. No pressure, no sales pitch.
+              Projects, questions, or scam-defense sessions.
             </p>
 
             {/* Direct contact options */}

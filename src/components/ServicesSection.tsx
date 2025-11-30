@@ -4,21 +4,21 @@ const services = [
   {
     icon: Globe,
     title: "Website Design & UX",
-    description: "Fast, original websites that actually convert. No templates, no bloat—just clean design that works.",
+    description: "Fast, original sites. No templates.",
     features: [
-      "Custom design from scratch",
-      "Mobile-first, lightning fast",
-      "Conversion-focused UX",
-      "Easy to maintain & update",
+      "Custom design",
+      "Mobile-first",
+      "Conversion-focused",
+      "Easy to maintain",
     ],
   },
   {
     icon: Cpu,
     title: "Hardware Prototyping",
-    description: "From homelab setups to IoT prototypes. I build the physical stuff that makes digital ideas real.",
+    description: "Homelabs, IoT, physical builds.",
     features: [
-      "Homelab design & builds",
-      "IoT & embedded systems",
+      "Homelab builds",
+      "Embedded systems",
       "Rapid prototyping",
       "Network infrastructure",
     ],
@@ -26,9 +26,9 @@ const services = [
   {
     icon: ShieldAlert,
     title: "Scam Defense Training",
-    description: "Talks and workshops that teach real people how to spot scams, deepfakes, and manipulation tactics.",
+    description: "Workshops on scams, deepfakes, and manipulation.",
     features: [
-      "Live talks & workshops",
+      "Live workshops",
       "Family & business training",
       "Phishing simulations",
       "Deepfake awareness",
@@ -46,9 +46,6 @@ export function ServicesSection() {
           <h2 className="section-title">
             Three ways I can help.
           </h2>
-          <p className="section-description">
-            Every project is different, but they all share the same goal: build something great, make it bulletproof.
-          </p>
         </div>
 
         {/* Services Grid */}

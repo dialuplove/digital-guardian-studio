@@ -26,7 +26,7 @@ export function HeroSection() {
 
           {/* Subline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-12 leading-relaxed animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            I'm Andrew (online as '<span className="font-mono text-foreground/80">dialuplove</span>'). PrisonKite is my one-person studio for creative web design, hardware prototyping, and scam-defense talks that help real people stay safer online.
+            One-person studio. Web, hardware, scam defense.
           </p>
 
           {/* CTAs */}
@@ -47,24 +47,21 @@ export function HeroSection() {
 
           {/* Who I work with */}
           <div className="mt-24 pt-12 border-t border-border/50 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <h2 className="text-xl font-semibold mb-4 text-foreground">Who I work with</h2>
-            <p className="text-muted-foreground mb-10 max-w-2xl leading-relaxed">
-              I'm a one-person studio. I work with a small number of people at a time so I can stay hands-on, ask questions, and actually care about the outcome.
-            </p>
+            <h2 className="text-xl font-semibold mb-8 text-foreground">Who I work with</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
               {[
                 {
                   title: "Families & individuals",
-                  description: "Helping people spot scams, protect older relatives, and stay safer in a messy online world."
+                  description: "Scam protection and digital safety."
                 },
                 {
                   title: "Small teams & local businesses",
-                  description: "Websites, simple systems, and scam-awareness sessions for people who don't have an IT department."
+                  description: "Websites and security awareness."
                 },
                 {
                   title: "Indie makers & weird projects",
-                  description: "Landing pages, prototypes, and creative experiments that need both storytelling and technical glue."
+                  description: "Prototypes and creative builds."
                 }
               ].map((group) => (
                 <div key={group.title} className="p-6 rounded-2xl bg-card border border-border/60 hover:border-primary/20 transition-all duration-300">

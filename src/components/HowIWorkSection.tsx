@@ -4,17 +4,17 @@ const workApproach = [
   {
     icon: Ear,
     title: "Listening first",
-    description: "Every project starts with understanding what you're actually trying to solve — not what tool you think you need.",
+    description: "Understanding the real problem, not the assumed one.",
   },
   {
     icon: Wrench,
     title: "Hands-on building",
-    description: "I design, prototype, and ship your solution myself. No outsourcing, no layers of middlemen.",
+    description: "Design, prototype, ship. No outsourcing.",
   },
   {
     icon: Lock,
     title: "Private examples",
-    description: "If you'd like to see previous work, I'll share relevant examples privately once we talk.",
+    description: "Work samples shared privately on request.",
   },
 ];
 
@@ -27,7 +27,7 @@ export function HowIWorkSection() {
           <span className="section-label">Approach</span>
           <h2 className="section-title">How I Work</h2>
           <p className="section-description">
-            I don't publish a big gallery of past work. Most of what I build is custom and personal to the people I work with. If you want to see examples, I'm happy to share them privately based on what you need.
+            No public portfolio. Custom work, shared privately.
           </p>
         </div>
 

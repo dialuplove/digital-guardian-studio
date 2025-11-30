@@ -31,8 +31,7 @@ export function HeroSection() {
 
           {/* Subline */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-10 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            I'm Andrew, the one-person operation behind <span className="font-mono text-foreground">PrisonKite</span>. 
-            I build creative things and help people stay safe in a world full of digital traps.
+            I'm Andrew (online as '<span className="font-mono text-foreground">dialuplove</span>'). PrisonKite is my one-person studio for creative web design, hardware prototyping, and scam-defense talks that help real people stay safer online.
           </p>
 
           {/* CTAs */}
@@ -46,7 +45,7 @@ export function HeroSection() {
             <Button variant="hero-outline" size="lg" asChild>
               <a href="#talks">
                 <Shield size={18} />
-                Book a Talk
+                Book a Scam-Defense Talk
               </a>
             </Button>
           </div>

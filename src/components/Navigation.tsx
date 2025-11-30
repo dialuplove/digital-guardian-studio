@@ -18,9 +18,12 @@ export function Navigation() {
       <div className="container-narrow">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className="font-mono text-lg font-bold tracking-tight">
-              <span className="text-primary">&gt;</span> PrisonKite
+          <a href="#" className="flex flex-col group">
+            <span className="font-mono text-lg font-bold tracking-tight text-foreground">
+              PrisonKite
+            </span>
+            <span className="text-xs text-muted-foreground hidden sm:block">
+              Creative Studio & Scam Defense
             </span>
           </a>
 

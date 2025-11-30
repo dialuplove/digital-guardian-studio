@@ -1,8 +1,6 @@
 import { Check } from "lucide-react";
-
 export function AboutSection() {
-  return (
-    <section id="about" className="section-padding bg-muted/40">
+  return <section id="about" className="section-padding bg-muted/40">
       <div className="container-narrow">
         <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
           {/* Content */}
@@ -21,7 +19,7 @@ export function AboutSection() {
                 <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Check className="w-3 h-3 text-primary" />
                 </div>
-                <span className="text-foreground">Technical. Builds real things.</span>
+                <span className="text-foreground">Architecture built around you                   </span>
               </div>
               <div className="flex items-center gap-3">
                 <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
@@ -68,6 +66,5 @@ export function AboutSection() {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }

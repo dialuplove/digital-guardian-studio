@@ -20,10 +20,10 @@ const workApproach = [
 
 export function HowIWorkSection() {
   return (
-    <section id="how-i-work" className="section-padding bg-muted/30">
+    <section id="how-i-work" className="section-padding bg-muted/40">
       <div className="container-narrow">
         {/* Header */}
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-2xl mb-16">
           <span className="section-label">Approach</span>
           <h2 className="section-title">How I Work</h2>
           <p className="section-description">
@@ -32,16 +32,16 @@ export function HowIWorkSection() {
         </div>
 
         {/* 3-part layout */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-10">
           {workApproach.map((item) => (
-            <div key={item.title} className="space-y-4">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+            <div key={item.title} className="space-y-5">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                 <item.icon className="w-5 h-5 text-primary" />
               </div>
               <h3 className="text-lg font-semibold text-foreground">
                 {item.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed">
                 {item.description}
               </p>
             </div>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 const navLinks = [
   { href: "#about", label: "About" },
   { href: "#services", label: "Services" },
-  { href: "#projects", label: "Projects" },
+  { href: "#how-i-work", label: "How I Work" },
   { href: "#talks", label: "Talks" },
   { href: "#contact", label: "Contact" },
 ];
@@ -14,9 +14,9 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
       <div className="container-narrow">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-18 py-4">
           {/* Logo */}
           <a href="#" className="flex flex-col">
             <span className="font-semibold text-lg tracking-tight text-foreground">
@@ -28,12 +28,12 @@ export function Navigation() {
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -46,7 +46,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+            className="md:hidden p-2.5 text-foreground hover:bg-muted/50 rounded-xl transition-colors"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={22} /> : <Menu size={22} />}
@@ -55,19 +55,19 @@ export function Navigation() {
 
         {/* Mobile Nav */}
         {isOpen && (
-          <div className="md:hidden py-6 border-t border-border animate-fade-in">
-            <div className="flex flex-col gap-1">
+          <div className="md:hidden py-6 border-t border-border/50 animate-fade-in">
+            <div className="flex flex-col gap-2">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-muted-foreground hover:text-foreground hover:bg-muted transition-colors py-3 px-3 rounded-lg"
+                  className="text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors py-3.5 px-4 rounded-xl"
                 >
                   {link.label}
                 </a>
               ))}
-              <div className="pt-4 mt-2 border-t border-border">
+              <div className="pt-4 mt-2 border-t border-border/50">
                 <Button className="w-full" asChild>
                   <a href="#contact" onClick={() => setIsOpen(false)}>
                     Let's Talk

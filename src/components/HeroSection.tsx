@@ -50,18 +50,34 @@ export function HeroSection() {
             </Button>
           </div>
 
-          {/* Quick stats */}
-          <div className="flex flex-wrap gap-8 mt-16 pt-8 border-t border-border/50 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            {[
-              { value: "50+", label: "Projects shipped" },
-              { value: "1000+", label: "People trained" },
-              { value: "∞", label: "Scams exposed" },
-            ].map((stat) => (
-              <div key={stat.label}>
-                <div className="text-2xl font-bold font-mono text-primary">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
-            ))}
+          {/* Who I work with */}
+          <div className="mt-16 pt-8 border-t border-border/50 animate-fade-in" style={{ animationDelay: "0.4s" }}>
+            <h2 className="text-lg font-semibold mb-3">Who I work with</h2>
+            <p className="text-muted-foreground mb-8 max-w-2xl">
+              I'm a one-person studio. I work with a small number of people at a time so I can stay hands-on, ask questions, and actually care about the outcome.
+            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Families & individuals",
+                  description: "Helping people spot scams, protect older relatives, and stay safer in a messy online world."
+                },
+                {
+                  title: "Small teams & local businesses",
+                  description: "Websites, simple systems, and scam-awareness sessions for people who don't have an IT department."
+                },
+                {
+                  title: "Indie makers & weird projects",
+                  description: "Landing pages, prototypes, and creative experiments that need both storytelling and technical glue."
+                }
+              ].map((group) => (
+                <div key={group.title} className="p-4 rounded-lg bg-surface border border-border/50">
+                  <h3 className="font-semibold text-foreground mb-2">{group.title}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{group.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

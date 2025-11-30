@@ -1,6 +1,6 @@
 export function Footer() {
   return (
-    <footer className="py-10 border-t border-border">
+    <footer className="py-12 border-t border-border/50">
       <div className="container-narrow">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
@@ -14,12 +14,12 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-8">
             <a 
               href="https://twitter.com/dialuplove" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               Twitter
             </a>
@@ -27,7 +27,7 @@ export function Footer() {
               href="https://github.com/dialuplove" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-200"
             >
               GitHub
             </a>

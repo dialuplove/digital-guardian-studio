@@ -41,7 +41,7 @@ export function ServicesSection() {
     <section id="services" className="section-padding">
       <div className="container-narrow">
         {/* Header */}
-        <div className="max-w-2xl mb-16">
+        <div className="max-w-2xl mb-20">
           <span className="section-label">Services</span>
           <h2 className="section-title">
             Three ways I can help.
@@ -52,15 +52,15 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-7">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-card border border-border rounded-xl p-6 card-hover"
+              className="group bg-card border border-border/60 rounded-2xl p-7 hover:border-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-foreground/[0.03]"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Icon */}
-              <div className="w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/15 transition-colors">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/15 transition-colors duration-300">
                 <service.icon className="text-primary" size={22} />
               </div>
 
@@ -70,15 +70,15 @@ export function ServicesSection() {
               </h3>
 
               {/* Description */}
-              <p className="text-muted-foreground mb-5 text-sm leading-relaxed">
+              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
                 {service.description}
               </p>
 
               {/* Features */}
-              <ul className="space-y-2.5">
+              <ul className="space-y-3">
                 {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-2.5 text-sm">
-                    <span className="w-1 h-1 rounded-full bg-primary flex-shrink-0" />
+                  <li key={feature} className="flex items-center gap-3 text-sm">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0" />
                     <span className="text-muted-foreground">{feature}</span>
                   </li>
                 ))}

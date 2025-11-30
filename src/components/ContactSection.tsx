@@ -27,14 +27,14 @@ export function ContactSection() {
   return (
     <section id="contact" className="section-padding">
       <div className="container-narrow">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left column - Text */}
           <div>
-            <span className="font-mono text-sm text-primary mb-4 block">Contact</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-tight">
+            <span className="section-label">Contact</span>
+            <h2 className="section-title">
               Got an idea or need help staying safe online?
             </h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <p className="section-description mb-10">
               Whether you want to build something cool, upgrade your homelab, or book a scam-defense talk—let's chat. No pressure, no sales pitch.
             </p>
 
@@ -44,10 +44,10 @@ export function ContactSection() {
                 href="mailto:hello@prisonkite.com" 
                 className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <div className="w-10 h-10 rounded-lg bg-surface border border-border/50 flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                  <Mail size={18} className="text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
+                  <Mail size={16} className="text-primary" />
                 </div>
-                <span>hello@prisonkite.com</span>
+                <span className="text-sm">hello@prisonkite.com</span>
               </a>
               
               <a 
@@ -56,10 +56,10 @@ export function ContactSection() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <div className="w-10 h-10 rounded-lg bg-surface border border-border/50 flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                  <Twitter size={18} className="text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
+                  <Twitter size={16} className="text-primary" />
                 </div>
-                <span>@dialuplove</span>
+                <span className="text-sm">@dialuplove</span>
               </a>
               
               <a 
@@ -68,20 +68,20 @@ export function ContactSection() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors group"
               >
-                <div className="w-10 h-10 rounded-lg bg-surface border border-border/50 flex items-center justify-center group-hover:border-primary/50 transition-colors">
-                  <Github size={18} className="text-primary" />
+                <div className="w-10 h-10 rounded-lg bg-card border border-border flex items-center justify-center group-hover:border-primary/30 transition-colors">
+                  <Github size={16} className="text-primary" />
                 </div>
-                <span>dialuplove</span>
+                <span className="text-sm">dialuplove</span>
               </a>
             </div>
           </div>
 
           {/* Right column - Form */}
           <div>
-            <form onSubmit={handleSubmit} className="bg-card border border-border/50 rounded-xl p-6 md:p-8">
+            <form onSubmit={handleSubmit} className="bg-card border border-border rounded-xl p-6 md:p-8">
               <div className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-foreground">
                     Name
                   </label>
                   <Input
@@ -90,12 +90,12 @@ export function ContactSection() {
                     type="text"
                     required
                     placeholder="Your name"
-                    className="bg-surface"
+                    className="bg-background"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-foreground">
                     Email
                   </label>
                   <Input
@@ -104,12 +104,12 @@ export function ContactSection() {
                     type="email"
                     required
                     placeholder="you@example.com"
-                    className="bg-surface"
+                    className="bg-background"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium mb-2 text-foreground">
                     Message
                   </label>
                   <Textarea
@@ -118,7 +118,7 @@ export function ContactSection() {
                     required
                     rows={5}
                     placeholder="Tell me what you're working on..."
-                    className="bg-surface resize-none"
+                    className="bg-background resize-none"
                   />
                 </div>
 
@@ -133,7 +133,7 @@ export function ContactSection() {
                   ) : (
                     <>
                       Send Message
-                      <Send size={18} />
+                      <Send size={16} />
                     </>
                   )}
                 </Button>

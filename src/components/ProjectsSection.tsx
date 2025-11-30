@@ -41,35 +41,33 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="section-padding bg-surface/50">
+    <section id="projects" className="section-padding bg-muted/30">
       <div className="container-narrow">
         {/* Header */}
         <div className="max-w-2xl mb-16">
-          <span className="font-mono text-sm text-primary mb-4 block">Projects</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          <span className="section-label">Projects</span>
+          <h2 className="section-title">
             Selected work.
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="section-description">
             A mix of web design, hardware builds, and security training—all shipped and making an impact.
           </p>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+        <div className="grid md:grid-cols-2 gap-5">
+          {projects.map((project) => (
             <div
               key={project.title}
-              className={`group bg-card border border-border/50 rounded-xl p-6 card-hover cursor-pointer ${
-                project.featured ? "md:col-span-1" : ""
-              }`}
+              className="group bg-card border border-border rounded-xl p-6 card-hover cursor-pointer"
             >
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-lg font-semibold group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
                 <ExternalLink 
-                  size={18} 
+                  size={16} 
                   className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0 mt-1" 
                 />
               </div>

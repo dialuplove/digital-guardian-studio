@@ -2,9 +2,9 @@ import { Navigation } from "@/components/Navigation";
 import { HeroSection } from "@/components/HeroSection";
 import { AboutSection } from "@/components/AboutSection";
 import { ServicesSection } from "@/components/ServicesSection";
+import { PrivacySection } from "@/components/PrivacySection";
 import { HowIWorkSection } from "@/components/HowIWorkSection";
-import { ScamDefenseSection } from "@/components/ScamDefenseSection";
-import { ProcessSection } from "@/components/ProcessSection";
+import { WhoIWorkWithSection } from "@/components/WhoIWorkWithSection";
 import { ContactSection } from "@/components/ContactSection";
 import { Footer } from "@/components/Footer";
 
@@ -16,9 +16,9 @@ const Index = () => {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <PrivacySection />
         <HowIWorkSection />
-        <ScamDefenseSection />
-        <ProcessSection />
+        <WhoIWorkWithSection />
         <ContactSection />
       </main>
       <Footer />

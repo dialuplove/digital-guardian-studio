@@ -1,60 +1,46 @@
-import { Globe, Cpu, ShieldAlert } from "lucide-react";
+import { Globe, Cpu, Shield } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
-    title: "Website Design & UX",
-    description: "Fast, original sites. No templates.",
-    features: [
-      "Custom design",
-      "Mobile-first",
-      "Conversion-focused",
-      "Easy to maintain",
+    title: "Web Work",
+    lines: [
+      "Calm, simple, human websites.",
+      "Built to last. Built with care.",
     ],
   },
   {
     icon: Cpu,
-    title: "Hardware Prototyping",
-    description: "Homelabs, IoT, physical builds.",
-    features: [
-      "Homelab builds",
-      "Embedded systems",
-      "Rapid prototyping",
-      "Network infrastructure",
+    title: "Hardware & Prototyping",
+    lines: [
+      "Small devices. Sensors. Homelab tooling.",
+      "Useful little machines.",
     ],
   },
   {
-    icon: ShieldAlert,
-    title: "Scam Defense Training",
-    description: "Workshops on scams, deepfakes, and manipulation.",
-    features: [
-      "Live workshops",
-      "Family & business training",
-      "Phishing simulations",
-      "Deepfake awareness",
+    icon: Shield,
+    title: "Scam-Defense Training",
+    lines: [
+      "Private sessions. Clear explanations.",
+      "Learn how scams work. Zero judgment.",
     ],
   },
 ];
 
 export function ServicesSection() {
   return (
-    <section id="services" className="section-padding">
+    <section id="services" className="section-padding bg-muted/40">
       <div className="container-narrow">
-        {/* Header */}
-        <div className="max-w-2xl mb-20">
+        <div className="max-w-2xl mb-16">
           <span className="section-label">Services</span>
-          <h2 className="section-title">
-            Three ways I can help.
-          </h2>
+          <h2 className="section-title">Three ways I can help.</h2>
         </div>
 
-        {/* Services Grid */}
-        <div className="grid md:grid-cols-3 gap-7">
-          {services.map((service, index) => (
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-card border border-border/60 rounded-2xl p-7 hover:border-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-foreground/[0.03]"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group"
             >
               {/* Icon */}
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary/15 transition-colors duration-300">
@@ -62,24 +48,18 @@ export function ServicesSection() {
               </div>
 
               {/* Title */}
-              <h3 className="text-lg font-semibold mb-3 text-foreground">
+              <h3 className="text-lg font-semibold mb-4 text-foreground">
                 {service.title}
               </h3>
 
-              {/* Description */}
-              <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-                {service.description}
-              </p>
-
-              {/* Features */}
-              <ul className="space-y-3">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary/60 flex-shrink-0" />
-                    <span className="text-muted-foreground">{feature}</span>
-                  </li>
+              {/* Lines */}
+              <div className="space-y-1">
+                {service.lines.map((line, i) => (
+                  <p key={i} className="text-muted-foreground text-sm leading-relaxed">
+                    {line}
+                  </p>
                 ))}
-              </ul>
+              </div>
             </div>
           ))}
         </div>
